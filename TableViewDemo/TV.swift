@@ -20,7 +20,7 @@ class TV: UITableView, UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    override init(frame: CGRect, style: UITableViewStyle) {
+    override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.register(UITableViewCell.self, forCellReuseIdentifier: "mycell")
         self.dataSource = self
